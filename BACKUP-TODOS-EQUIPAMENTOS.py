@@ -29,17 +29,17 @@ min = today.minute
 seg = today.second
 #====================================================================
 #ARGUMENTOS PARA ACESSO EQUIPAMENTO
-username = 'jmnetbkp'
-password = '189K0R*f1Td9'
+username = 'XXXXXXXXX'
+password = 'XXXXXXXXXXXX'
 
 
 #ZABBIX
-addressz = "http://181.215.211.17"
-usernamez = 'jmnetbkp'
-passwordz = 'CVw65wi*r01g'
+addressz = "http://XXX.XXX.XXX.XXX"
+usernamez = 'XXXXXXXX'
+passwordz = 'XXXXXXXXXX'
 
 #SERVIDOR-FTP
-userftp = 'bkp-socitel'
+userftp = 'XXXXXX'
 
 #====================================================================
 #Funcoes

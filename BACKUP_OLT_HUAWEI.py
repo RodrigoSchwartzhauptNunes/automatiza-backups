@@ -21,17 +21,17 @@ min = today.minute
 seg = today.second
 #====================================================================
 #Argumentos USER EQUIPAMENTO
-username = 'vianet'
-password = 'hyu12jmn'
+username = 'vXXXXXXXX'
+password = 'XXXXXXXX'
 
 #ZABBIX
-addressz = "http://181.215.211.17"
-usernamez = 'jmnetbkp'
-passwordz = 'CVw65wi*r01g'
+addressz = "http://XXXXXXXX"
+usernamez = 'XXXXXXXX'
+passwordz = 'XXXXXXXX'
 
 #SERVIDOR-FTP
-userftp = 'bkp'
-FTPSERVER = '192.168.100.148'
+userftp = 'XXXXXXXX'
+FTPSERVER = 'XXXXXXXX'
 
 #====================================================================
 #necessario configurar usuario e senha na olt antes
@@ -40,7 +40,7 @@ FTPSERVER = '192.168.100.148'
 #Main code
 try:
     zapi = ZabbixAPI(server=addressz); zapi.login(usernamez, passwordz)
-    id_grupo = zapi.hostgroup.get({"search":{"name":"OLT-HW-VIANET"}, "output":["groupid","name"] })
+    id_grupo = zapi.hostgroup.get({"search":{"name":"OLT-HW"}, "output":["groupid","name"] })
     nomes_grupo = zapi.host.get({"groupids":id_grupo[0]['groupid'], "output":["host","hostid"] })
     for y in nomes_grupo:
             ips_host = zapi.hostinterface.get({"hostids":y['hostid'], "output":["ip"]})

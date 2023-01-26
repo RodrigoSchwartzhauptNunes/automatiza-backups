@@ -4,7 +4,7 @@
 #=======================================================================
 #backup OLT ZTE VIA TELNET
 #Usage
-#./bkp-olt-zte.py {IP} {PASTA NO FTP}
+#./BACKUP_OLT_ZTE.py {PASTA NO FTP}
 #=======================================================================
 #Bibliotecas
 import sys,pexpect
@@ -27,11 +27,11 @@ HOST = sys.argv[1]
 PATH = sys.argv[2]
 #=======================================================================
 #Variaveis para serem alteradas
-userftp = 'bkp'
-passwordftp = 'cF*G2r17i*gW'
-user = 'jmnetbkp'
-password = 'S*W*f94Cd7f9'
-FTPSERVER = '172.28.147.1'
+userftp = 'XXX'
+passwordftp = 'XXXXXX'
+user = 'XXXXXX'
+password = 'XXXXXXX'
+FTPSERVER = 'XXXXXXXXXX'
 #=======================================================================
 #Main code
 child = pexpect.spawn ('telnet '+HOST)

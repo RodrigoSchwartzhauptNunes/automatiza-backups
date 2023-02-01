@@ -5,7 +5,7 @@
 #====================================================================
 #LOG
 #Atualizado (24/11/22) = Ajustado expressao regular Olt_Huawei
-#
+#Atualização de BUG (01/02/2023) = Ajustado variavel 'result' para deixa-la zerada em cada repetição
 #====================================================================
 #BIBLIOTECAS
 import sys

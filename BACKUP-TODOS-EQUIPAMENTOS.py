@@ -211,6 +211,7 @@ try:
                     file = open('/home/'+userftp+'/'+PATH+'/'+PATH+'_DIA_'+str(day)+'_'+str(month)+'_'+str(year)+'_'+str(hora)+'_'+str(min)+'.txt','w')
                     file.writelines(result)
                     file.close(); ssh.close()
+                    result = '0'
                     sz = os.path.getsize(r'/home/'+userftp+'/'+PATH+'/'+PATH+'_DIA_'+str(day)+'_'+str(month)+'_'+str(year)+'_'+str(hora)+'_'+str(min)+'.txt')
                     if sz > 1000:
                         print ("Sucesso no Backup do Host = " +PATH+'')
